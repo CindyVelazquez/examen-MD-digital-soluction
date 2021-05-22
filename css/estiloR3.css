@@ -1,0 +1,108 @@
+/*----Settings----*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #edeef6;
+    font-family: "arial";
+    margin: 0;
+}
+/*----End Settings----*/
+/*
+p{
+    margin: 50px 0px 0px 705px;
+        
+}
+h1{
+    margin: -300px 0px 0px 705px
+}
+*/
+/*----Modal----*/
+button{
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color:#fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+.modal-container{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.modal{
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+/*----End-Modal----*/
+
+/*----Image----*/
+.block_image_container{
+    display:inline-block;
+
+}
+.block_text_container{
+    padding: 40px;
+    width: 50%;
+    float: right;
+    margin-right: 200px;
+    
+}
+.block_image_container .block_text_container  h1,
+.block_image_container .block_text_container p{
+    width: 100%;
+    height: auto;
+    
+    
+    
+
+}
+
+/*----End Image----*/
+/*----Mobile----*/
+@media screen and (max-width: 480px) {
+
+    .block_text_container{
+        width: 100%;
+        margin:-10px -50px 10px 300px;   
+    }
+
+    .block_image_container{
+        width: 100%;
+    }
+    
+    .block_text_container .block_image_container h1,
+    .block_text_container.block_image_container p{
+        width: 100%;
+        height: auto;
+      
+    }
+
+}
+/*----End Mobile----*/
